@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Альбина Самородова](https://up.htmlacademy.ru/adaptive/17/user/995183).
-* Наставник: `Неизвестно`.
+* Наставник: Ирина Малиновская.
 
 ---
 
