@@ -1,0 +1,50 @@
+@import "fonts.less";
+@import "normalize.less";
+@import "variables.less";
+@import "mixins.less";
+@import "blocks/wrapper.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/site-list.less";
+@import "blocks/page-main.less";
+@import "blocks/download-app.less";
+@import "blocks/button.less";
+@import "blocks/advantages.less";
+@import "blocks/users-photos.less";
+@import "blocks/post-list.less";
+@import "blocks/contest.less";
+@import "blocks/page-footer.less";
+@import "blocks/social.less";
+@import "blocks/copyright.less";
+
+body {
+  position: relative;
+  min-width: 320px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
