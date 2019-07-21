@@ -1,0 +1,69 @@
+.download-app {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: @primary-color;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.download-app__title {
+  display: none;
+}
+
+.download-app__button {
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.download-app__image {
+  padding-top: 175px;
+}
+
+.download-app__source-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  .list-mixin;
+}
+
+.download-app__source-link {
+  display: block;
+  font-size: 0;
+
+  &--apple {
+    background-image: url("../../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    width: 47px;
+    height: 56px;
+  }
+
+  &--android {
+    background-image: url("../../img/logo-android.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    width: 43px;
+    height: 47px;
+  }
+
+  &--windows {
+    background-image: url("../../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    width: 44px;
+    height: 41px;
+  }
+}
+
+.download-app__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: @second-color;
+  text-align: center;
+}
