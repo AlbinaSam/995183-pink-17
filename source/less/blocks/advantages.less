@@ -1,13 +1,29 @@
+.advantages {
+  padding-bottom: 320px;
+  background-color: #f2f2f2;
+  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 760px;
+}
+
 .advantages__header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  padding: 46px 38px;
+  padding-top: 45px;
+  background-color: @second-color;
+}
+
+.advantages__wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .advantages__slogan {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 24px;
   font-weight: 300;
   color: @primary-color;
@@ -15,16 +31,98 @@
 
 .advantages__list {
   .list-mixin;
+  padding-top: 50px;
   text-align: center;
-  background-color: #f2f2f2;
 }
 
 .advantages__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 24px;
 }
 
 .advantages__description {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 24px;
 }
+
+
+@media (min-width: @tablet-width) {
+  .advantages {
+  padding-bottom: 0;
+  background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+  background-repeat: no-repeat;
+  background-position: 25px bottom;
+}    
+    
+  .advantages__header {
+    padding-top: 55px;
+  }
+    
+  .advantages__list {
+    padding-top: 105px;
+    width: 307px;
+    text-align: left;
+  }
+    
+  .advantages__slogan {
+    font-size: 40px;
+    margin: 0 auto;
+    }
+    
+  .advantages__slogan--second {
+        width: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+    
+    .advantages {
+        background-image: none;
+    }
+    
+  .advantages__header {
+    padding-top: 75px;
+  }
+    
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+  }
+    
+  .advantages__item  {
+    width: 240px;
+  }
+    
+  .advantages-list:first-child::before {
+    content: "";
+    background-image: url("../../img/iphone-screen-1-desktop@1x.png");    
+  }
+    
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+    
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+    
+  .advantages__slogan {
+    font-size: 50px;
+    margin: 0 auto;
+    }
+    
+  .advantages__slogan--second {
+        width: 430px;
+  }
+
+}
+
