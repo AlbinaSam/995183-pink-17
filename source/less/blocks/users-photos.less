@@ -3,10 +3,32 @@
 }
 
 .users-photos__description {
+  margin: 0 auto;
+  padding: 55px 0;
   background-color: @second-color;
   background-repeat: no-repeat;
   background-position: 0 0;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+@media(min-width: @tablet-width) {
+  .users-photos__description {
+    font-size: 18px;
+    padding: 100px 0 80px;
+    width: 440px;
+  }
+    
+  .users-photos__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+} 
+
+@media(min-width: @desktop-width) {
+  .users-photos__description {
+    padding-bottom: 92px;
+    width: 575px;
+  }
 }

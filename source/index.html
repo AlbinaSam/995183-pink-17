@@ -8,7 +8,9 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
+        <img class="page-header__logo-image--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
+        <img class="page-header__logo-image--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип приложения Пинк">
+        <img class="page-header__logo-image--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип приложения Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть  меню</button>
@@ -33,9 +35,8 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение для раскрашивания серых будней в розовый цвет</h1>
       <section class="download-app">
-    <img class="download-app__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Фото iphone">
         <div class="download-app__wrapper wrapper">
-          <h2 class="download-app__title">Взгляните на жизнь ярче!</h2>
+          <h2 class="download-app__title">Взгляните на жизнь иначе!</h2>
           <a class="download-app__button button" href="#">Скачать приложение</a>
           <ul class="download-app__source-list">
             <li class="download-app__source-item">
@@ -52,27 +53,26 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="advantages__wrapper wrapper">
-          <header class="advantages__header">
+        <header class="advantages__header">
+          <div class="wrapper">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-            <p class="advantages__slogan">Нам есть, что вам предложить!</p>
-          </header>
+            <p class="advantages__slogan advantages__slogan--second">Нам есть, что вам предложить!</p>
+          </div>
+        </header>
+        <div class="advantages__wrapper wrapper">
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--uplifting">
               <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--changes">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--friends">
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото Всем привет!">
             </li>
           </ul>
         </div>

@@ -8,7 +8,9 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
+        <img class="page-header__logo-image--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
+        <img class="page-header__logo-image--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Логотип приложения Пинк">
+        <img class="page-header__logo-image--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип приложения Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть  меню</button>
@@ -36,19 +38,25 @@
         <div class="users-photos__wrapper wrapper">
           <h2 class="visually-hidden">Посты пользователей</h2>
           <p class="users-photos__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <div class="users-photos__best">
+            <span class="users-photos__feature">Панорама дня</span>
+            <img class="post-list__image--mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото пользователя">
+            <img class="post-list__image--tablet" src="img/panorama-tablet@1x.jpg" width="660" height="509" alt="Фото пользователя">
+            <img class="post-list__image--desktop" src="img/panorama-desktop@1x.jpg" width="1200" height="506" alt="Фото пользователя">
+            <div class="post-list__description">
+              <b class="post-list__author">Анна</b>
+              <span class="post-list__how-long-ago">(5 минут назад)</span>
+              <p class="post-list__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <span class="post-list__likes"> Нравится: 215</span>
+            </div>
+          </div>
           <ul class="users-photos__list post-list">
-            <li class="post-list__item post-list__item--best-view">
-              <span class="post-list__feature">Панорама дня</span>
-              <img class="post-list__image post-list__image--best-view" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото пользователя">
-              <div class="post-list__description">
-                <b class="post-list__author">Анна</b>
-                <span class="post-list__how-long-ago">(5 минут назад)</span>
-                <p class="post-list__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <span class="post-list__likes"> Нравится: 215</span>
-              </div>
-            </li>
             <li class="post-list__item">
-              <img class="post-list__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              <a href="#">
+                <img class="post-list__image--mobile" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                <img class="post-list__image--tablet" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                <img class="post-list__image--desktop" src="img/photo-car-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+              </a>
               <div class="post-list__description">
                 <b class="post-list__author">Левон</b>
                 <span class="post-list__how-long-ago">(5 часов назад)</span>
@@ -57,7 +65,11 @@
               </div>
             </li>
             <li class="post-list__item">
-              <img class="post-list__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              <a href="#">
+                <img class="post-list__image--mobile" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                <img class="post-list__image--tablet" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                <img class="post-list__image--desktop" src="img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+              </a>
               <div class="post-list__description">
                 <b class="post-list__author">Антон</b>
                 <span class="post-list__how-long-ago">(12 часов назад)</span>
@@ -66,7 +78,11 @@
               </div>
             </li>
             <li class="post-list__item">
-              <img class="post-list__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              <a href="#">
+                <img class="post-list__image--mobile" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                <img class="post-list__image--tablet" src="img/photo-window-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                <img class="post-list__image--desktop" src="img/photo-window-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+              </a>
               <div class="post-list__description">
                 <b class="post-list__author">Борис</b>
                 <span class="post-list__how-long-ago">(20 часов назад)</span>
@@ -75,7 +91,11 @@
               </div>
             </li>
             <li class="post-list__item">
-              <img class="post-list__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              <a href="#">
+                <img class="post-list__image--mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                <img class="post-list__image--tablet" src="img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                <img class="post-list__image--desktop" src="img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+              </a>
               <div class="post-list__description">
                 <b class="post-list__author">Сергей</b>
                 <span class="post-list__how-long-ago">(25 часов назад)</span>
@@ -84,7 +104,11 @@
               </div>
             </li>
             <li class="post-list__item">
-              <img class="post-list__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              <a href="#">
+                <img class="post-list__image--mobile" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                <img class="post-list__image--tablet" src="img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                <img class="post-list__image--desktop" src="img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+              </a>
               <div class="post-list__description">
                 <b class="post-list__author">Максим</b>
                 <span class="post-list__how-long-ago">(40 часов назад)</span>
@@ -93,7 +117,11 @@
               </div>
             </li>
             <li class="post-list__item">
-              <img class="post-list__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+              <a href="#">
+                <img class="post-list__image--mobile" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                <img class="post-list__image--tablet" src="img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                <img class="post-list__image--desktop" src="img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+              </a>
               <div class="post-list__description">
                 <b class="post-list__author">Надежда</b>
                 <span class="post-list__how-long-ago">(45 часов назад)</span>

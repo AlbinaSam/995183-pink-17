@@ -1,14 +1,17 @@
 .download-app {
   display: flex;
-  flex-wrap: wrap;
+  padding-top: 490px;
   background-color: @primary-color;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 35% 175px, 50% 0;
 }
 
 .download-app__title {
   display: none;
+  margin: 0;
+  color: @second-color;
+  font-weight: 300;
 }
 
 .download-app__button {
@@ -16,14 +19,16 @@
   margin-bottom: 30px;
 }
 
-.download-app__image {
-  padding-top: 175px;
+.download-app__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  align-items: center;
 }
 
 .download-app__source-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: flex-end;
   .list-mixin;
 }
@@ -39,6 +44,7 @@
     background-size: contain;
     width: 47px;
     height: 56px;
+    margin-right: 35px;
   }
 
   &--android {
@@ -48,6 +54,7 @@
     background-size: contain;
     width: 43px;
     height: 47px;
+    margin-right: 35px;
   }
 
   &--windows {
@@ -67,3 +74,47 @@
   color: @second-color;
   text-align: center;
 }
+
+@media(min-width: @tablet-width) {
+  .download-app {
+    background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px 185px, 50% 0;
+    padding: 185px 0 110px;
+  }
+    
+  .download-app__wrapper {
+    width: 300px;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+    
+  .download-app__title {
+    display: block;
+    width: 190px;
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .download-app {
+    flex-direction: row;
+    background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 340px 210px, 50% 0;
+    padding: 210px 0 125px;
+  }
+    
+  .download-app__wrapper {
+    margin-left: 130px;
+  }
+    
+  .download-app__title {
+    display: block;
+    width: 235px;
+    font-size: 50px;
+    text-align: center;
+  }  
+}
+
