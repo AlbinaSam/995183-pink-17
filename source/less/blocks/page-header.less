@@ -9,21 +9,10 @@
   color: @second-color;
 }
 
-.page-header__logo-image--tablet {
-  display: none;
-}
-
-.page-header__logo-image--desktop {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
-  .page-header__logo-image--mobile {
-    display: none;
-  }
-
-  .page-header__logo-image--tablet {
-    display: block;
+  .page-header__logo-image {
+    width: 147px;
+    height: 40px;
   }
 }
 
@@ -32,13 +21,5 @@
     width: 940px;
     display: flex;
     padding: 0;
-  }
-
-  .page-header__logo-image--tablet {
-    display: none;
-  }
-
-  .page-header__logo-image--desktop {
-    display: block;
   }
 }
