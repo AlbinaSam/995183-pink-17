@@ -1,6 +1,43 @@
-/*.main-nav__list {
+.main-nav {
+    position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+  padding: 0;
+  width: 50px;
+  height: 24px;
+  background-color: @primary-color;
+  border: none;
+}
+
+.main-nav__toggle{
+  &:hover,
+  &:focus svg {
+    path {
+      fill: @third-color;
+    }
+  }
+  &:active svg {
+    path {
+      fill: rgba(210, 40, 86, 0.3);
+    }    
+  }
+}
+
+@media (max-width: @drop-down-menu-width){
+  .main-nav__closed.main-nav__wrapper {
     display: none;
-}*/
+  }
+    
+  .main-nav__closed.page-header__logo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: none;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .main-nav__toggle {
