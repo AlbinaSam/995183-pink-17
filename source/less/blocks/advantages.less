@@ -1,10 +1,7 @@
 .advantages {
-  padding-bottom: 320px;
   background-color: #f2f2f2;
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% 760px;
 }
+
 
 .advantages__header {
   display: flex;
@@ -16,11 +13,9 @@
   background-color: @second-color;
 }
 
-.advantages__wrapper {
-  display: flex;
-  justify-content: flex-end;
+.advantages__list {
+  .list-mixin;
 }
-
 .advantages__slogan {
   margin: 0;
   margin-bottom: 40px;
@@ -29,33 +24,36 @@
   color: @primary-color;
 }
 
-.advantages__list {
-  .list-mixin;
-  padding-top: 50px;
-  text-align: center;
+.text-list {
+    text-align: center;
 }
 
-.advantages__title {
+.text-list__title {
   margin: 0;
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 24px;
 }
 
-.advantages__description {
+.text-list__description {
   margin: 0;
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 24px;
 }
 
+/*
+
+
+.advantages__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
 @media (min-width: @tablet-width) {
-  .advantages {
-    padding-bottom: 0;
-    background-image: url("../../img/iphone-screen-3-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: 25px bottom;
-  }
 
   .advantages__header {
     padding-top: 55px;
@@ -101,41 +99,7 @@
     position: relative;
   }
 
-  .advantages__item--uplifting::before {
-    content: "";
-    background-image: url("../../img/iphone-screen-1-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    position: absolute;
-    left: 25px;
-    top: -350px;
-    width: 190px;
-    height: 301px;
-  }
-
-  .advantages__item--changes::before {
-    content: "";
-    background-image: url("../../img/iphone-screen-2-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    position: absolute;
-    left: 25px;
-    top: -350px;
-    width: 190px;
-    height: 301px;
-  }
-
-  .advantages__item--friends::before {
-    content: "";
-    background-image: url("../../img/iphone-screen-3-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    position: absolute;
-    left: 25px;
-    top: -350px;
-    width: 190px;
-    height: 301px;
-  }
+  
 
   .advantages__title {
     font-size: 30px;
@@ -156,3 +120,4 @@
     width: 430px;
   }
 }
+*/

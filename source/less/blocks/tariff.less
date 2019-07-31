@@ -1,0 +1,132 @@
+@media (min-width: @tablet-width) {
+  .tariff__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .tariff__table tr {
+    color: @primary-color;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .tarif__name--empty {
+    background-color: #ffffff;
+  }
+
+  .tariff__name {
+    color: #ffffff;
+    background-color: @primary-color;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 9px 33px 3px;
+    text-align: center;
+
+    &:nth-child(2){
+      border-right: 2px solid #e5e5e5;
+      box-shadow: -2px 0 @primary-color;
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+
+    &:nth-child(3) {
+      border-right: 2px solid #e5e5e5;
+    }
+
+    &:nth-child(4) {
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
+      box-shadow: 2px 0 @primary-color;
+    }
+  }
+
+  .tariff__price {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .tariff__table tr:not(:first-child) td {
+    width: 25%;
+    border: 2px solid #e5e5e5;
+    padding: 7px 17px 7px 15px;
+  }
+}
+
+  .hit {
+    position: relative;
+    
+    &::before {
+      content: "ХИТ";
+      font-weight: 600;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 61px;
+      height: 61px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../../img/bg-hit-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 61px;
+      height: 61px;
+    }
+  }
+
+  .tariff__option-yes {
+    font-size: 0;
+    background-image: url("../../img/icon-yes-green.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .tariff__option-no {
+    font-size: 0;
+    background-image: url("../../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .tariff__slider {
+    text-align: center;
+  }
+
+@media (min-width: @desktop-width) {
+  .tariff__name {
+    padding: 15px 66px 14px;
+  }
+
+  .hit {
+
+    &::before {
+      top: 7px;
+      left: 5px;
+    }    
+        
+    &::after {
+      background-image: url("../../img/bg-hit.svg");
+      width: 74px;
+      height: 73px;
+    }
+  }
+
+  .tariff__table tr  {
+    .font-mixin;
+  }
+
+  .tariff__name {
+    font-size: 18px;
+}
+
+  .tariff__price {
+    font-size: 24px;
+  }
+}

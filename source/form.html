@@ -60,9 +60,85 @@
       <h1 class="page-main__title">Конкурс на самое безбашенное пушествие с Пинк</h1>
       <section class="contest">
         <div class="contest__wrapper wrapper">
-          <h2 class="contest__description"></h2>
-          <form class="contest__form">
+          <h2 class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__description--add"> Пожалуйста, заполните форму ниже:</span></h2>
+          <form class="form" method="get" action="https://echo.htmlacademy.ru">
+           
+            <div class="form__names">
+             
+              <label class="form__names-label">
+              <span class="form__names-sign">Фамилия:</span>
+              <input class="form__names-input form__text" type="text" name="surname" placeholder="Укажите фамилию" required></label>
+              
+              <label class="form__names-label">
+              <span class="form__names-sign">Имя:</span>
+              <input class="form__names-input form__text" type="text" name="name" placeholder="Введите ваше имя" required></label>
+              
+              <label class="form__names-label">
+             <span class="form__names-sign">Отчество:</span>
+             <input class="form__names-input form__text" type="text" name="patronymic" placeholder="Ну и отчество тоже" required></label>
+             
+            </div> 
+            
+            <fieldset class="form__radio">
+              <legend class="form__title">С каким приложением путешествовали?</legend>
+              <input class="visually-hidden form__radio-icon" type="radio" name="app" value="iOS" id="app-iOS-radio" checked>
+              <label for="app-iOS-radio">Pink для iOS</label>
+              <input class="visually-hidden form__radio-icon" type="radio" name="app" value="android" id="app-android-radio">
+              <label for="app-android-radio">Pink на Android</label>
+              <input class="visually-hidden form__radio-icon" type="radio" name="app" value="windows" id="app-windows-radio">
+              <label for="app-windows-radio">Windows Phone</label>
+            </fieldset>
+            
+            <fieldset class="form__contacts">
+              <legend class="form__title form__title--none">Контактная информация</legend>
+              <div class="form__contacts-wrapper">
+              <label class="form__contacts-label">
+                <input class="form__contacts-input form__text" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                <span class="form__phone-icon form__contacts-sign">Номер телефона</span>
+              </label>
+              
+              <label class="form__contacts-label">
+              <input class="form__contacts-input form__text" type="email" name="email" placeholder="Введите почту" required>
+            <span class="form__mail-icon form__contacts-sign">Адрес почты</span>
+              </label>   
+              </div>
+            </fieldset>
+            
+            <fieldset class="form__checkbox">
+              <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form__checkbox-wrapper">
+              <input class="visually-hidden form__checkbox-icon" type="checkbox" name="shark" id="shark-checkbox" checked>
+              <label for="shark-checkbox">Сделал селфи с акулой
+              </label>
+              
+              <input class="visually-hidden form__checkbox-icon" type="checkbox" name="beach" id="beach-checkbox" checked>
+              <label for="beach-checkbox">Обгорел на пляже</label>
+              
+              <input class="visually-hidden form__checkbox-icon" type="checkbox" name="Norris" id="Norris-checkbox">
+              <label for="Norris-checkbox">Видел Чака Норриса</label>
+              <input class="visually-hidden form__checkbox-icon" type="checkbox" name="sovenir" id="souvenir-checkbox">
+              <label for="souvenir-checkbox">Накупил сувениров</label>
+              <input class="visually-hidden form__checkbox-icon" type="checkbox" name="tower" id="tower-checkbox" checked>
+              <label for="tower-checkbox">Удержал башню</label>
+              <input class="visually-hidden form__checkbox-icon" type="checkbox" name="hotel" id="hotel-checkbox">
+              <label for="hotel-checkbox">Разгромил отель</label>
+              </div>
+            </fieldset> 
+            
+            <fieldset class="form__textarea">
+              <legend class="form__title">Опишите свои эмоции</legend>
+              <textarea class="form__area" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <div class="form__submit">
+            <button class="form__button" type="submit">Отправить форму</button>
+            <span class="form__info"><sup>* </sup>&mdash; обязательные<span class="form__info--desctop-add"> для заполнения</span> поля</span>
+            </div>
           </form>
+          
+          
+          
+          
+          
         </div>
       </section>
     </main>

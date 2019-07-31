@@ -1,0 +1,104 @@
+.research {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+    margin-bottom: 100px;
+  }
+
+  .research__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+  .research__image {
+    position: relative;
+    width: 238px;
+    height: 276px;
+    background-image: url("../../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+
+  .research__pic {
+    position: absolute;
+    top: 54px;
+    left: 16px;
+    width: 175px;
+    height: 175px;
+    text-align: center;
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: bold;
+    color: @third-color;
+    border: 15px solid @third-color;
+    border-radius: 50%;
+  }
+
+  .research__description {
+    width: 300px;
+  }
+
+  .research__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;  
+  }
+
+  .research__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .research__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: @third-color;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    background-color: #f2f2f2;
+    margin-bottom: 72px;
+  }
+
+  .research__image {
+    width: 298px;
+    height: 345px;
+  }
+
+  .research__pic {
+    top: 66px;
+    left: 18px;
+    width: 220px;
+    height: 220px;
+    font-size: 120px;
+    line-height: 187px;
+    border: 20px solid @third-color;
+    border-radius: 50%;
+  }
+
+  .research__description {
+    width: 524px;
+  }
+
+  .research__title {
+    line-height: 30px;
+  }
+
+  .research__text {
+    .font-mixin;
+  }
+
+  .research__link {
+    .font-mixin;
+    color: @third-color;   
+  }
+}
