@@ -30,9 +30,9 @@
     border-color: @primary-color;     
   }
   
-    &:focus {
-        border-color: @third-color;
-    }
+  &:focus {
+    border-color: @third-color;
+  }
     
   &::placeholder {
     color: @primary-color;
@@ -202,6 +202,15 @@
   border: 2px solid #e5e5e5;
   resize: none;
   padding: 17px 13px;
+  outline: none;
+    
+  &:hover {
+    border-color: @primary-color;     
+  }
+  
+  &:focus {
+    border-color: @third-color;
+  }
 
   &::placeholder {
     color: @primary-color;
