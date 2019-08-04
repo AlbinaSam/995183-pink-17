@@ -24,16 +24,16 @@
   box-sizing: border-box;
   padding: 12px 20px 13px;
   border: 2px solid #e5e5e5;
- outline: none;
-      
+  outline: none;
+
   &:hover {
     border-color: @primary-color;     
   }
-  
+
   &:focus {
     border-color: @third-color;
   }
-    
+
   &::placeholder {
     color: @primary-color;
   }
@@ -46,7 +46,6 @@
 .form__names-input {
   width: 100%;
   margin-top: 8px;
-   
 }
 
 .form__contacts-label {
@@ -68,14 +67,14 @@
   padding: 0;
   margin-bottom: 38px;
   background-color: #f2f2f2;
-    
+
   label {
     .font-mixin;
     text-transform: none;
     margin-left: 68px;
     margin-bottom: 50px;
     position: relative;
-  
+
     &::before {
       content: "";
       position: absolute;
@@ -86,11 +85,11 @@
       border: 2px solid #e5e5e5;
       background-color: #ffffff;      
     }
-      
+
     &:hover::before {
       border-color: @primary-color;
     }
-      
+
     &:active::before {
       border-color: @third-color;
     }
@@ -140,7 +139,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 38px;
-    
+
   label {
     .font-mixin;
     text-transform: none;
@@ -159,15 +158,15 @@
       background-color: #ffffff;
       border-radius: 50%;
     }
-      
+
     &:hover::before {
       border-color: @primary-color;
     }
-      
+
     &:active::before {
       border-color: @third-color;
     }
-      
+
     &::after {
       content: "";
       position: absolute;
@@ -203,11 +202,11 @@
   resize: none;
   padding: 17px 13px;
   outline: none;
-    
+
   &:hover {
     border-color: @primary-color;     
   }
-  
+
   &:focus {
     border-color: @third-color;
   }
@@ -234,18 +233,18 @@
   border: none;
   border-radius: 3px;
   margin-bottom: 40px;
-    
-    &:hover {
-        background-color: #1c9b5e;
-    }
-    
-    &:active {
-        color: rgba(255, 255, 255, 0.3);
-    }
-    
-    &:disabled {
-        background-color: #e5e5e5;
-    }
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__info {
@@ -282,12 +281,12 @@
   .form__title {
     width: auto;
     padding: 0 25px;
-    
+
     &--none {
       display: block;
     }
   }
-    
+
   .form__radio {
     order: 1;
     border: 2px solid #e5e5e5;
@@ -312,13 +311,13 @@
     margin-top: 0;
     margin-bottom: 10px;
   }
-    
+
   .form__contacts-label {
     margin-bottom: 32px;
     position: relative;
     flex-direction: column;   
   }
-      
+
   .form__phone-icon::after {
     content: "";
     position: absolute;
@@ -351,7 +350,7 @@
     background-color: #ffffff;
     width: 100%;
     padding-top: 45px;
-        
+
     label {
       margin-left: 110px;
     }

@@ -1,7 +1,7 @@
 .advantages {
   background-color: #f2f2f2;
+  margin-bottom: 40px;
 }
-
 
 .advantages__header {
   display: flex;
@@ -16,6 +16,7 @@
 .advantages__list {
   .list-mixin;
 }
+
 .advantages__slogan {
   margin: 0;
   margin-bottom: 40px;
@@ -25,7 +26,7 @@
 }
 
 .text-list {
-    text-align: center;
+  text-align: center;
 }
 
 .text-list__title {
@@ -42,25 +43,45 @@
   line-height: 24px;
 }
 
-/*
+.picture-list {
+  overflow: hidden;
+}
 
+.picture-list__item {
+  margin-bottom: -40px;
+} 
+
+.picture-list__image {
+  width: 157px;
+  height: 320px;
+}
+
+.picture-list__item:nth-child(2) {
+  display: none;
+}
+
+.picture-list__item:nth-child(3) {
+  display: none;
+}
 
 .advantages__wrapper {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
-
-
-
 @media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .advantages__header {
     padding-top: 55px;
   }
 
-  .advantages__list {
-    padding-top: 105px;
+  .text-list {  
     width: 307px;
     text-align: left;
   }
@@ -72,6 +93,19 @@
 
   .advantages__slogan--second {
     width: 350px;
+  }
+
+  .picture-list__item:nth-child(1) {
+    display: none;
+  }
+
+  .picture-list__item:nth-child(3) {
+    display: block;
+  }
+
+  .picture-list__image {
+    width: 268px;
+    height: 481px;
   }
 }
 
@@ -91,22 +125,31 @@
     justify-content: space-around;
     width: 100%;
     text-align: center;
-    padding-top: 265px;
   }
 
-  .advantages__item {
+  .picture-list__item:nth-child(1) {
+    display: block;     
+  }
+
+  .picture-list__item:nth-child(2) {
+    display: block;
+  }
+
+  .picture-list__image {
+    width: 186px;
+    height: 382px;
+  }
+
+  .text-list__item {
     width: 240px;
-    position: relative;
   }
 
-  
-
-  .advantages__title {
+  .text-list__title {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .advantages__description {
+  .text-list__description {
     font-size: 18px;
     line-height: 30px;
   }
@@ -120,4 +163,3 @@
     width: 430px;
   }
 }
-*/

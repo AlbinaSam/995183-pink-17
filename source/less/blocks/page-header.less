@@ -1,15 +1,14 @@
 .page-header {
   display: flex;
-width: 100%;
+  width: 100%;
   flex-direction: column;
   color: @second-color;
-    background-color: @primary-color;
+  background-color: @primary-color;
 }
 
-.page-header__wrapper{
+.page-header__wrapper {
   width: 320px;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 .page-header__logo {
@@ -39,12 +38,12 @@ width: 100%;
 }
 
 @media (min-width: @tablet-width) {
- .page-header__wrapper{
-  width: 660px;
-}
+  .page-header__wrapper{
+    width: 660px;
+  }
+
   .page-header__logo {
-    width: 100%;
-      
+    width: 100%;  
   }
 
   .page-header__logo-image {
@@ -55,21 +54,18 @@ width: 100%;
 
 @media (min-width: @desktop-width) {
   .page-header {
- position: absolute;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
-  
   }
 
   .page-header__wrapper {
     width: 940px;
-    
     display: flex;
     flex-direction: row;
-  background: none;
+    background: none;
   }
 
   .page-header__logo {
     border: none;
-     
   }
 }
