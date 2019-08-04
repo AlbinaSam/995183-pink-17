@@ -50,6 +50,8 @@
 
 .form__contacts-label {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .form__contacts-input {
@@ -103,7 +105,7 @@
 }
 
 .form__checkbox-icon:checked + label::before {
-  background-image: url(../../img/icon-yes-pink.svg);
+  background-image: url("../../img/icon-yes-pink.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -124,11 +126,6 @@
   border: none;
   padding: 0;
   margin-bottom: 38px;
-}
-
-.form__contacts-label {
-  display: flex;
-  flex-direction: column-reverse;
 }
 
 .form__radio {
