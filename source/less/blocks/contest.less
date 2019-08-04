@@ -1,0 +1,35 @@
+.contest__description {
+  margin: 55px auto 45px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+
+  &--add {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contest__description {
+    font-size: 18px;
+    width: 490px;
+    margin-top: 100px;
+    margin-bottom: 75px;
+
+    &--add {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest__description {
+    width: 755px;
+    margin-bottom: 64px;
+
+    &--add {
+      display: inline;
+    }
+  }
+}

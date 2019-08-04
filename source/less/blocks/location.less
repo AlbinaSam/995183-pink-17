@@ -1,0 +1,48 @@
+.location__map {
+  margin: 0 auto;
+  position: relative;
+  background-color: #f3f1ea;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 200px;
+  width: 320px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 35px;
+    background-image: url("../../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .location__map {
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+    width: 660px;
+    height: 375px;
+
+    &::before {
+      top: -1px;
+      width: 660px;
+      height: 70px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location__map {
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    width: 1200px;
+    height: 505px;
+
+    &::before {
+      width: 1200px;
+      height: 105px;
+    }
+  }
+}
