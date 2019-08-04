@@ -38,19 +38,19 @@
 
 .editor__crop-image {
   path:last-child {
-    fill: @third-color; 
+    fill: @third-color;
   }
 
   &:hover {
     path:last-child {
-      fill: rgba(40, 54, 69, 0.5);  
+      fill: rgba(40, 54, 69, 0.5);
     }
   }
 }
 
 .editor__fill-image {
   path:nth-child(2) {
-    fill: rgba(40, 54, 69, 0.3); 
+    fill: rgba(40, 54, 69, 0.3);
   }
 
   rect {
@@ -59,21 +59,21 @@
 
   &:hover {
     path:nth-child(2) {
-      fill: rgba(40, 54, 69, 0.5); 
+      fill: rgba(40, 54, 69, 0.5);
     }
   }
 }
 
 .editor__contrast-image {
   path {
-    fill: rgba(40, 54, 69, 0.3); 
+    fill: rgba(40, 54, 69, 0.3);
   }
 
   &:hover {
     path {
-      fill: rgba(40, 54, 69, 0.5);  
+      fill: rgba(40, 54, 69, 0.5);
     }
-  } 
+  }
 }
 
 .editor__crop-control {
@@ -83,7 +83,7 @@
   height: 2px;
   background-color: @primary-color;
   margin-top: 37px;
- 
+
   &::after {
     content: "";
     position: absolute;
@@ -172,7 +172,7 @@
   .editor__tools-wrapper {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;  
+    flex-direction: column;
   }
 
   .editor__picture {
@@ -206,7 +206,7 @@
     height: 22px;
 
     path:nth-child(2) {
-      fill: @third-color; 
+      fill: @third-color;
     }
 
     rect {
@@ -219,7 +219,7 @@
     height: 16px;
 
     path {
-      fill: @third-color;; 
+      fill: @third-color;
     }
   }
 
@@ -228,7 +228,7 @@
     position: relative;
     margin-top: 0;
     left: 0;
- 
+
     &::after {
       content: "";
       position: absolute;
@@ -308,7 +308,7 @@
       border-radius: 50%;
       background-color: #f2f2f2;
     }
-  }    
+  }
 
   .editor__contrast {
     position: relative;
@@ -352,16 +352,16 @@
 
   .editor__tools-wrapper {
     flex-direction: row;
-    width: 410px;    
+    width: 410px;
   }
 
   .editor__tools-list {
     flex-direction: column;
-    width: 382px; 
+    width: 382px;
   }
 
   .editor__tools-list li {
-    width: 382px;  
+    width: 382px;
   }
 
   .editor__crop-image {
@@ -384,30 +384,30 @@
     }
   }
 
-  .editor__fill-control { 
+  .editor__fill-control {
     width: 288px;
 
     &::after {
-     left: 250px;
+      left: 250px;
     }
   }
 
   .editor__fill {
     position: relative;
-  
+
     &::after {
       width: 410px;
-      }
     }
+  }
 
   .editor__contrast-control {
     width: 288px;
 
     &::after {
       top: -6px;
-      left: 155px; 
+      left: 155px;
     }
-  }    
+  }
 
   .editor__contrast {
     &::after {
