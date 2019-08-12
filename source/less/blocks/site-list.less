@@ -1,5 +1,7 @@
 .site-list {
   .list-mixin;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-list a {
@@ -25,13 +27,6 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .site-list {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .site-list {
     width: 625px;
@@ -45,17 +40,17 @@
     &--active {
       position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 35px;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background: @second-color;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 35px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: @second-color;
     }
   }
+}
 
   .site-list a {
     padding: 46px 0;

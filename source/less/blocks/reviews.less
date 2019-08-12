@@ -1,16 +1,21 @@
-.rewiews__item {
+.reviews__item {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0;
   text-align: center;
+    
+  &:nth-child(2),
+  &:nth-child(3) {
+    display: none;
+  }
 }
 
 .reviews__author-name {
   .font-mixin;
   color: #000000;
   font-weight: bold;
-  margin-bottom: 7px;
+  margin-bottom: 13px;
 }
 
 .reviews__author-info {
@@ -37,8 +42,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .reviews {
+    margin-bottom: 70px;
+  }    
+
   .reviews__author-name {
     font-size: 20px;
+    margin-bottom: 2px;
   }
 
   .reviews__author-info {
@@ -51,7 +61,7 @@
   .reviews__text {
     .font-mixin;
     order: -1;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
   }
 }
 
@@ -60,6 +70,7 @@
     background-image: url("../../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: top center;
+    margin-bottom: 75px;
   }
 
   .reviews__list {
