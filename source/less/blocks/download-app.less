@@ -1,10 +1,10 @@
 .download-app {
   display: flex;
-  padding-top: 490px;
+  padding: 396px 0 30px;
   background-color: @primary-color;
   background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 35% 175px, 0 -270px;
+  background-position: 36% 110px, 0 -110px;
   background-size: auto, cover;
 }
 
@@ -18,12 +18,13 @@
 .download-app__button {
   margin-top: 28px;
   margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .download-app__wrapper {
   display: flex;
   flex-direction: column;
-  width: 280px;
   align-items: center;
 }
 
@@ -37,6 +38,7 @@
 .download-app__source-link {
   display: block;
   font-size: 0;
+  margin-bottom: 25px;
 
   &--apple {
     background-image: url("../../img/logo-apple.svg");
@@ -69,6 +71,7 @@
 }
 
 .download-app__description {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -80,8 +83,13 @@
   .download-app {
     background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 0 185px, 50% 0;
-    padding: 213px 0 110px;
+    background-position: -20px 75px, 50% 0;
+    padding: 94px 0 110px;
+  }
+
+  .download-app__button {
+    margin-top: 35px;
+    margin-bottom: 46px;
   }
 
   .download-app__wrapper {
@@ -96,6 +104,14 @@
     font-size: 40px;
     text-align: center;
   }
+
+  .download-app__description {
+    font-size: 18px;
+  }
+
+  .download-app__source-link {
+    margin-bottom: 37px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -103,8 +119,8 @@
     flex-direction: row;
     background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 340px 210px, 50% 0;
-    padding: 231px 0 125px;
+    background-position: 145px 210px, 50% 0;
+    padding: 220px 0 125px;
   }
 
   .download-app__wrapper {
@@ -116,5 +132,15 @@
     width: 235px;
     font-size: 50px;
     text-align: center;
+  }
+
+  .download-app__button {
+    font-size: 21px;
+    margin-top: 60px;
+    margin-bottom: 67px;
+  }
+
+  .download-app__source-link {
+    margin-bottom: 56px;
   }
 }

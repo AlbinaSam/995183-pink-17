@@ -1,5 +1,7 @@
 .site-list {
   .list-mixin;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-list a {
@@ -22,13 +24,6 @@
 
   &:active {
     color: rgba(256, 256, 256, 0.3);
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .site-list {
-    display: flex;
-    flex-direction: column;
   }
 }
 

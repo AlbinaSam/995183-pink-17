@@ -2,6 +2,7 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
+  margin-right: 15px;
 }
 
 .copyright__academy-logo-link {
@@ -9,10 +10,18 @@
   width: 27px;
   height: 34px;
   font-size: 0;
-  background-image: url("../../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: contain;
+
+  path {
+    fill: @third-color;
+  }
+
+  &:hover path {
+    fill: @primary-color;
+  }
+
+  &:active path {
+    fill: rgba(40, 54, 69, 0.3);
+  }
 }
 
 @media (min-width: @desktop-width) {

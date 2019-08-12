@@ -1,5 +1,6 @@
 .users-photos {
   background-color: @second-color;
+  margin-bottom: 43px;
 }
 
 .users-photos__best {
@@ -8,7 +9,8 @@
 
 .users-photos__description {
   margin: 0 auto;
-  padding: 55px 0;
+  padding: 45px 0 50px;
+  width: 245px;
   background-color: @second-color;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -18,25 +20,28 @@
 }
 
 @media (min-width: @tablet-width) {
+  .users-photos {
+    margin-bottom: 67px;
+  }
+
   .users-photos__best {
     margin-bottom: 50px;
   }
 
   .users-photos__description {
     font-size: 18px;
-    padding: 100px 0 80px;
+    padding: 92px 0 76px;
     width: 440px;
-  }
-
-  .users-photos__list {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .users-photos {
+    margin-bottom: 25px;
+  }
+
   .users-photos__description {
-    padding-bottom: 92px;
+    padding-bottom: 87px;
     width: 575px;
   }
 }
