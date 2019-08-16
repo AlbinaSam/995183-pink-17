@@ -1,4 +1,5 @@
 .page-footer__wrapper {
+  padding: 40px 0; 
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -11,8 +12,23 @@
 }
 
 .page-footer__logo {
-  margin-top: 40px;
   margin-bottom: 37px;
+
+  &:hover path {
+    fill: @third-color;
+  }
+
+  &:active g:first-child path {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-image--desctop {
+  display: none;
 }
 
 .page-footer__social {
@@ -53,5 +69,13 @@
 
   .page-footer__logo {
     margin-right: 232px;
+  }
+
+  .page-footer__logo-image {
+    display: none;
+  }
+
+  .page-footer__logo-image--desctop {
+    display: block;
   }
 }

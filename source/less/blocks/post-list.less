@@ -13,7 +13,7 @@
 }
 
 .post-list__image {
-  vertical-align: bottom;
+  display: block;
 }
 
 .post-list__description {
@@ -22,6 +22,8 @@
 }
 
 .post-list__author {
+  font-weight: bold;
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
 }
@@ -78,6 +80,9 @@
   }
 
   .post-list__description {
+    display: flex;
+    flex-direction: column;
+    min-height: 109px;
     padding: 24px 10px 22px 27px;
   }
 
@@ -86,6 +91,7 @@
   }
 
   .post-list__likes {
+        margin-top: auto;
     padding-left: 0;
 
     &::before {
