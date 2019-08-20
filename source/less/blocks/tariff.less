@@ -1,13 +1,13 @@
 .tariff {
-    height: auto;
-    background-color: #f2f2f2;
-    padding: 90px 0 100px;
-    margin-bottom: 48px;
-    background-image: url("../../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% auto;
-  }
+  height: auto;
+  background-color: #f2f2f2;
+  padding: 90px 0 100px;
+  margin-bottom: 48px;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}
 
 .tariff__wrapper {
   width: 100%;
@@ -20,100 +20,98 @@
 }
 
 .tariff__table tr {
-    color: @primary-color;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+  color: @primary-color;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
 .tariff__name {
-    color: #ffffff;
-    background-color: @primary-color;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 12px 33px 15px;
-    text-align: center;
+  color: #ffffff;
+  background-color: @primary-color;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 33px 15px;
+  text-align: center;
 
-    &:nth-child(2) {
-      border-right: 2px solid #e5e5e5;
-      box-shadow: -2px 0 @primary-color;
-      border-bottom-left-radius: 4px;
-      border-top-left-radius: 4px;
-    }
-
-    &:nth-child(3) {
-      border-right: 2px solid #e5e5e5;
-    }
-
-    &:nth-child(4) {
-      border-bottom-right-radius: 4px;
-      border-top-right-radius: 4px;
-      box-shadow: 2px 0 @primary-color;
-    }
+  &:nth-child(2) {
+    border-right: 2px solid #e5e5e5;
+    box-shadow: -2px 0 @primary-color;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
   }
+
+  &:nth-child(3) {
+    border-right: 2px solid #e5e5e5;
+  }
+
+  &:nth-child(4) {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 2px 0 @primary-color;
+  }
+}
 
 .tariff__price {
-    font-size: 24px;
-    font-weight: 300;
-  }
+  font-size: 24px;
+  font-weight: 300;
+}
 
 .tariff__name--empty {
-    display: none;
+  display: none;
 }
 
 .tariff__option-name {
-   display: none
+  display: none
 }
 
 .tariff__table tr:not(:first-child) td {
-    border: 2px solid #e5e5e5;
-    padding: 13px 120px 14px 15px;
-    background-color: @second-color;
-  }
+  border: 2px solid #e5e5e5;
+  padding: 13px 120px 14px 15px;
+  background-color: @second-color;
+}
 
 .hit {
-    position: relative;
+  position: relative;
 
-    &::before {
-      content: "ХИТ";
-      font-size: 14px;
-      font-weight: normal;
-      transform: rotate(-45deg);
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      z-index: 1;
-      width: 61px;
-      height: 61px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -2px;
-      background-image: url("../../img/bg-hit.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      width: 74px;
-      height: 73px;
-    }
+  &::before {
+    content: "ХИТ";
+    font-size: 14px;
+    font-weight: normal;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 61px;
+    height: 61px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    background-image: url("../../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 74px;
+    height: 73px;
+  }
+}
 
 .tariff__option-yes {
-    
-    background-image: url("../../img/icon-yes-green.svg");
-    background-repeat: no-repeat;
-    background-position: right 18px center;
-  }
+  background-image: url("../../img/icon-yes-green.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+}
 
-  .tariff__option-no {
-    
-    background-image: url("../../img/icon-no.svg");
-    background-repeat: no-repeat;
-    background-position: right 18px center;
-  }
+.tariff__option-no {
+  background-image: url("../../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+}
 
 .tariff__slider {
   text-align: center;
@@ -185,7 +183,7 @@
     font-size: 18px;
     font-weight: 300;
   }
-    
+
   .tariff__table td {
     width: 25%;
   }
