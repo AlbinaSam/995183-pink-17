@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="main-nav--closed main-nav--nojs">
+  <body>
+    <div class="site-wrapper main-nav--closed main-nav--nojs">
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
@@ -352,8 +353,9 @@
         </div>
       </div>
     </footer>
+    </div>
     <script>
-      var navMain = document.querySelector('body');
+      var navMain = document.querySelector('.site-wrapper');
       var navToggle = document.querySelector('.main-nav__toggle');
 
       navMain.classList.remove('main-nav--nojs');

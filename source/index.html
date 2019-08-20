@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="main-nav--closed main-nav--nojs">
+  <body>
+   <div class="site-wrapper main-nav--closed main-nav--nojs">
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
@@ -168,7 +169,7 @@
           <div class="research__description">
             <h3 class="research__title">Эффект<br> на 24 часа!</h3>
             <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="research__link">Узнать больше об исследовании</a>
+            <a href="#" class="research__link">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
@@ -203,7 +204,8 @@
       </section>
       <section class="tariff">
         <h2 class="visually-hidden">Тарифные планы</h2>
-        <table class="tariff__table wrapper">
+        <div class="tariff__wrapper">
+        <table class="tariff__table">
           <tbody>
             <tr>
               <td class="tariff__name--empty"></td>
@@ -213,24 +215,25 @@
             </tr>
             <tr>
               <td class="tariff__option-name">Розовый фильтр</td>
-              <td class="tariff__option-yes">есть</td>
-              <td class="tariff__option-yes">есть</td>
-              <td class="tariff__option-yes">есть</td>
+              <td class="tariff__option-yes">Розовый фильтр</td>
+              <td class="tariff__option-yes">Розовый фильтр</td>
+              <td class="tariff__option-yes">Розовый фильтр</td>
             </tr>
             <tr>
               <td class="tariff__option-name">Смайлики</td>
-              <td class="tariff__option-no">нет</td>
-              <td class="tariff__option-yes">есть</td>
-              <td class="tariff__option-yes">есть</td>
+              <td class="tariff__option-no">Смайлики</td>
+              <td class="tariff__option-yes">Смайлики</td>
+              <td class="tariff__option-yes">Смайлики</td>
             </tr>
             <tr>
               <td class="tariff__option-name">Комментарии</td>
-              <td class="tariff__option-no">нет</td>
-              <td class="tariff__option-no">нет</td>
-              <td class="tariff__option-yes">есть</td>
+              <td class="tariff__option-no">Комментарии</td>
+              <td class="tariff__option-no">Комментарии</td>
+              <td class="tariff__option-yes">Комментарии</td>
             </tr>
           </tbody>
         </table>
+        </div>
         <p class="tariff__slider slider__toggles">
           <button class="slider__toggle">1</button>
           <button class="slider__toggle">2</button>
@@ -338,8 +341,9 @@
         </div>
       </div>
     </footer>
+    </div>
     <script>
-      var navMain = document.querySelector('body');
+      var navMain = document.querySelector('.site-wrapper');
       var navToggle = document.querySelector('.main-nav__toggle');
 
       navMain.classList.remove('main-nav--nojs');
@@ -354,5 +358,6 @@
         }
       });
     </script>
+    
   </body>
 </html>
