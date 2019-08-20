@@ -28,32 +28,47 @@
 }
 
 @media (max-width: @drop-down-menu-width) {
+  .main-nav--closed .page-header {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav--closed .page-header__logo {
+    border-bottom: none;
+  }
+
   .main-nav--closed .main-nav__wrapper {
     display: none;
   }
 
-  .main-nav--closed .page-header__logo {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-bottom: none;
+  .main-nav--closed .main-nav__toggle--open {
+    display: block;
   }
-}
 
-.main-nav--closed .main-nav__toggle {
-  /*картинка бутерброд(изначально у меня стили, как будто .man-nav closed)*/
-}
+  .main-nav--closed .main-nav__toggle--close {
+    display: none;
+  }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
+  .main-nav--opened .main-nav__toggle--open {
+    display: none;
+  }
 
-.main-nav--nojs .main-nav__wrapper {
-  display: block;
-}
+  .main-nav--opened .main-nav__toggle--close {
+    display: block;
+  }
 
-.main-nav--nojs .page-header__logo {
-  position: static;
-  background-color: @primary-color;
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav--nojs .page-header__logo {
+    position: static;
+    background-color: @primary-color;
+  }
 }
 
 @media (min-width: @tablet-width) {

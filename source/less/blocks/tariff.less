@@ -1,5 +1,116 @@
 .tariff {
-  height: 540px;
+  height: auto;
+  background-color: #f2f2f2;
+  padding: 90px 0 100px;
+  margin-bottom: 48px;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}
+
+.tariff__wrapper {
+  width: 100%;
+}
+
+.tariff__table {
+  border-collapse: collapse;
+  width: 300%;
+  transform: translateX(-33.33333%);
+}
+
+.tariff__table tr {
+  color: @primary-color;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tariff__name {
+  color: #ffffff;
+  background-color: @primary-color;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 33px 15px;
+  text-align: center;
+
+  &:nth-child(2) {
+    border-right: 2px solid #e5e5e5;
+    box-shadow: -2px 0 @primary-color;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+  &:nth-child(3) {
+    border-right: 2px solid #e5e5e5;
+  }
+
+  &:nth-child(4) {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 2px 0 @primary-color;
+  }
+}
+
+.tariff__price {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.tariff__name--empty {
+  display: none;
+}
+
+.tariff__option-name {
+  display: none;
+}
+
+.tariff__table tr:not(:first-child) td {
+  border: 2px solid #e5e5e5;
+  padding: 13px 120px 14px 15px;
+  background-color: @second-color;
+}
+
+.hit {
+  position: relative;
+
+  &::before {
+    content: "ХИТ";
+    font-size: 14px;
+    font-weight: normal;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 61px;
+    height: 61px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    background-image: url("../../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 74px;
+    height: 73px;
+  }
+}
+
+.tariff__option-yes {
+  background-image: url("../../img/icon-yes-green.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+}
+
+.tariff__option-no {
+  background-image: url("../../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
 }
 
 .tariff__slider {
@@ -10,36 +121,34 @@
   .tariff {
     height: auto;
     background-color: #f2f2f2;
-    padding: 39px 0 70px;
+    padding: 90px 0 70px;
     margin-bottom: 48px;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -60px;
-      right: 0;
-      width: 100%;
-      height: 60px;
-      background-image: url("../../img/bg-triangle-white.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: contain;
-      transform: rotate(180deg);
-    }
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
   }
 
   .tariff__table {
     border-collapse: collapse;
+    width: 620px;
+    margin: 0 auto;
+    transform: none;
   }
 
   .tariff__table tr {
+    text-transform: none;
     color: @primary-color;
     font-size: 14px;
     line-height: 30px;
   }
 
+  .tariff__option-name {
+    display: table-cell;
+  }
+
   .tariff__name--empty {
+    display: table-cell;
     background-color: #f2f2f2;
   }
 
@@ -75,8 +184,11 @@
     font-weight: 300;
   }
 
-  .tariff__table tr:not(:first-child) td {
+  .tariff__table td {
     width: 25%;
+  }
+
+  .tariff__table tr:not(:first-child) td {
     border: 2px solid #e5e5e5;
     padding: 7px 17px 7px 15px;
     background-color: @second-color;
@@ -131,7 +243,7 @@
 
 @media (min-width: @desktop-width) {
   .tariff {
-    padding: 70px 0 95px;
+    padding: 151px 0 95px;
     margin-bottom: 68px;
 
     &::before {
@@ -142,12 +254,16 @@
     }
   }
 
+  .tariff__table {
+    width: 940px;
+  }
+
   .tariff__table tr:not(:first-child) td {
-    padding: 16px 17px 13px 20px;
+    padding: 15px 17px 14px 20px;
   }
 
   .tariff__name {
-    padding: 16px 66px 15px;
+    padding: 18px 66px 17px;
     font-size: 18px;
   }
 
