@@ -13,17 +13,20 @@
   background-color: transparent;
   border: none;
 
-  &:hover,
+  svg {
+    fill: @second-color;
+  }
+
+  &:hover svg {
+    fill: @third-color;
+  }
+
   &:focus svg {
-    path {
-      fill: @third-color;
-    }
+    fill: @third-color;
   }
 
   &:active svg {
-    path {
-      fill: rgba(210, 40, 86, 0.3);
-    }
+    fill: rgba(210, 40, 86, 0.3);
   }
 }
 

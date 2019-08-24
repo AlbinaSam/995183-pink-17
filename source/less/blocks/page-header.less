@@ -20,18 +20,23 @@
   height: 22px;
   margin-left: 20px;
 
-  &:focus path {
+  &:focus svg {
     fill: @third-color;
   }
 }
 
-.page-header__logo-link[href] svg {
-  &:hover path {
+.page-header__logo-link svg {
+    fill: @second-color;
+  }
+    
+.page-header__logo-link[href] {
+  &:hover svg {
     fill: @third-color;
   }
 
-  &:active path {
-    fill: rgba(255, 255, 255, 0.3);
+  &:active svg {
+    fill: @second-color;
+    opacity: 0.3
   }
 }
 
