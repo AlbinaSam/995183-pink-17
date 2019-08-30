@@ -7,7 +7,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -50px;
+  top: -48px;
   right: 20px;
   padding: 0;
   background-color: transparent;
@@ -60,6 +60,11 @@
     display: block;
   }
 
+  /*.main-nav--opened .download-app {
+    padding-top: 395px;
+    background-position: center 108px, center top -35px;
+  }*/
+
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
@@ -68,9 +73,13 @@
     display: block;
   }
 
-  .main-nav--nojs .page-header__logo {
+  .main-nav--nojs .page-header {
     position: static;
     background-color: @primary-color;
+  }
+
+  .main-nav--nojs .page-header__logo {
+    border-bottom: 1px solid black;
   }
 }
 
