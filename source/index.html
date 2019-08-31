@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display: none">
@@ -84,7 +85,7 @@
             </li>
             <li class="picture-list__item">
               <picture>
-                <source type="image-webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
                 <img class="picture-list__image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="186" height="302" alt="Фото iphone">
               </picture>
             </li>
@@ -133,9 +134,9 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о приложении Pink</h2>
         <div class="reviews__wrapper wrapper slider">
-          <input class="slider-toggle" type="radio" id="btn-1" name="reviews-toggle" checked>
-          <input class="slider-toggle" type="radio" id="btn-2" name="reviews-toggle">
-          <input class="slider-toggle" type="radio" id="btn-3" name="reviews-toggle">
+          <input class="slider-toggle toggle1" type="radio" id="btn-1" name="reviews-toggle" checked>
+          <input class="slider-toggle toggle2" type="radio" id="btn-2" name="reviews-toggle">
+          <input class="slider-toggle toggle3" type="radio" id="btn-3" name="reviews-toggle">
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <span class="reviews__author-name">Николай Петров</span>
@@ -166,9 +167,9 @@
       <section class="tariff">
         <h2 class="visually-hidden">Тарифные планы</h2>
           <div class="slider">
-            <input class="slider-toggle" type="radio" id="btn-4" name="tariff-toggle">
-            <input class="slider-toggle" type="radio" id="btn-5" name="tariff-toggle" checked>
-            <input class="slider-toggle" type="radio" id="btn-6" name="tariff-toggle">
+            <input class="slider-toggle toggle4" type="radio" id="btn-4" name="tariff-toggle">
+            <input class="slider-toggle toggle5" type="radio" id="btn-5" name="tariff-toggle" checked>
+            <input class="slider-toggle toggle6" type="radio" id="btn-6" name="tariff-toggle">
               <div class="tariff__wrapper">
                 <table class="tariff__table">
                   <tbody>
@@ -207,7 +208,7 @@
         </div>
       </section>
       <section class="contacts wrapper">
-        <h2 class="contacts__title">Остались вопросы?Свяжитесь с нами!</h2>
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__wrapper">
           <p class="contacts__way">Звоните:
             <a href="tel:+78125556666">
@@ -224,6 +225,7 @@
       </section>
       <section class="location">
         <h2 class="visually-hidden">Где мы находимся</h2>
+        <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1900101241517!2d30.32542578368358!3d59.93886219879318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559935120640!5m2!1sru!2sru"  style="border:0" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="page-footer page-footer--index-mobile">

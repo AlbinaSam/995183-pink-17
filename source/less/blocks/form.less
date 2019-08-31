@@ -30,6 +30,7 @@
   padding: 13px 20px 14px;
   border: 2px solid #e5e5e5;
   outline: none;
+  min-height: 59px;
 
   &:hover {
     border-color: @primary-color;
@@ -41,6 +42,7 @@
 
   &::placeholder {
     color: @primary-color;
+    opacity: 1;
   }
 }
 
@@ -119,11 +121,13 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  margin: 0 auto;
 
   &--none {
     display: none;
   }
 }
+
 
 .form__checkbox-title {
   margin-bottom: 43px;
@@ -135,7 +139,7 @@
   flex-direction: column;
 }
 
-.form__checkbox-choices div {
+.form__checkbox-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 52px;
@@ -158,12 +162,15 @@
   padding: 38px 0 47px;
 }
 
-.form__radio {
-  padding: 0;
-  border: none;
+.form__radio-choices {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.form__radio {
+  padding: 0;
+  border: none;
 
   label {
     .font-mixin;
@@ -171,6 +178,7 @@
     margin-left: 69px;
     margin-bottom: 45px;
     position: relative;
+    display: inline-block;
 
     &:last-child {
       margin-bottom: 0;
@@ -222,7 +230,7 @@
   order: 4;
   border: none;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .form__textarea-title {
@@ -238,6 +246,7 @@
   resize: none;
   padding: 15px 19px;
   outline: none;
+  vertical-align: top;
 
   &:hover {
     border-color: @primary-color;
@@ -249,6 +258,7 @@
 
   &::placeholder {
     color: @primary-color;
+    opacity: 1;
   }
 }
 
@@ -441,7 +451,7 @@
 
   .form__textarea {
     border: 2px solid #e5e5e5;
-    padding: 37px 0 42px;
+    padding: 37px 0 50px;
     margin-bottom: 70px;
   }
 
@@ -483,6 +493,10 @@
 
   .form__names-label:last-child {
     margin-bottom: 0;
+  }
+
+  .form__names-input {
+    width: 100%;
   }
 
   .form__radio-wrapper {
@@ -550,12 +564,13 @@
 
   .form__textarea {
     padding-top: 34px;
-    padding-bottom: 35px;
+    padding-bottom: 45px;
+    margin-bottom: 65px;
   }
 
   .form__area {
     width: 816px;
-    min-height: 124px;
+    min-height: 127px;
   }
 
   .form__info--desctop-add {

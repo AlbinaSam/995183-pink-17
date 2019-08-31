@@ -18,34 +18,34 @@
   transition: background-color 0.3s;
 }
 
-#btn-1:checked ~ .slider__controls label[for="btn-1"],
-#btn-2:checked ~ .slider__controls label[for="btn-2"],
-#btn-3:checked ~ .slider__controls label[for="btn-3"],
-#btn-4:checked ~ .slider__controls label[for="btn-4"],
-#btn-5:checked ~ .slider__controls label[for="btn-5"],
-#btn-6:checked ~ .slider__controls label[for="btn-6"] {
+.toggle1:checked ~ .slider__controls label[for="btn-1"],
+.toggle2:checked ~ .slider__controls label[for="btn-2"],
+.toggle3:checked ~ .slider__controls label[for="btn-3"],
+.toggle4:checked ~ .slider__controls label[for="btn-4"],
+.toggle5:checked ~ .slider__controls label[for="btn-5"],
+.toggle6:checked ~ .slider__controls label[for="btn-6"] {
   background-color: @second-color;
   border: 3px solid @primary-color;
 }
 
 @media (max-width: @tablet-width) {
-  #btn-4:checked ~ .tariff__wrapper .tariff__table {
+  .toggle4:checked ~ .tariff__wrapper .tariff__table {
     margin-left: 20px;
   }
 
-  #btn-5:checked ~ .tariff__wrapper .tariff__table {
+  .toggle5:checked ~ .tariff__wrapper .tariff__table {
     margin-left: -254px;
   }
 
-  #btn-6:checked ~ .tariff__wrapper .tariff__table {
+  .toggle6:checked ~ .tariff__wrapper .tariff__table {
     margin-left: -530px;
   }
 }
 
 @media (max-width: @desktop-width) {
-  #btn-1:checked ~ .reviews__list .reviews__item:nth-child(1),
-  #btn-2:checked ~ .reviews__list .reviews__item:nth-child(2),
-  #btn-3:checked ~ .reviews__list .reviews__item:nth-child(3) {
+  .toggle1:checked ~ .reviews__list .reviews__item:nth-child(1),
+  .toggle2:checked ~ .reviews__list .reviews__item:nth-child(2),
+  .toggle3:checked ~ .reviews__list .reviews__item:nth-child(3) {
     display: flex;
   }
 }

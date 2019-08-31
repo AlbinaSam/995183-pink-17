@@ -23,9 +23,14 @@
   }
 
   &:active .page-footer__logo-image {
-    fill: rgba(40, 54, 69);
+    fill: rgb(40, 54, 69);
     opacity: 0.3;
   }
+}
+
+.page-footer__logo-image:active {
+  fill: rgb(40, 54, 69);
+  opacity: 0.3;
 }
 
 .page-footer__logo-image--desktop {
@@ -74,11 +79,11 @@
     &:hover .page-footer__logo-image--desktop {
       fill: @third-color;
     }
+  }
 
-    &:active .page-footer__logo-image--desktop {
-      fill: rgba(40, 54, 69);
-      opacity: 0.3;
-    }
+  .page-footer__logo-image--desktop:active {
+    fill: rgb(40, 54, 69);
+    opacity: 0.3;
   }
 
   .page-footer__logo-image {

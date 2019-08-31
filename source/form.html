@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display: none">
@@ -70,16 +71,18 @@
             <div class="form__radio-wrapper">
               <fieldset class="form__radio wrapper">
                 <legend class="form__radio-title form__title">С каким приложением путешествовали?</legend>
-                <input class="visually-hidden form__radio-icon" type="radio" name="app" value="iOS" id="app-iOS-radio" checked>
-                <label for="app-iOS-radio">Pink для iOS</label>
-                <input class="visually-hidden form__radio-icon" type="radio" name="app" value="android" id="app-android-radio">
-                <label for="app-android-radio">Pink на Android</label>
-                <input class="visually-hidden form__radio-icon" type="radio" name="app" value="windows" id="app-windows-radio">
-                <label for="app-windows-radio">Windows Phone</label>
+                <div class="form__radio-choices">
+                  <input class="visually-hidden form__radio-icon" type="radio" name="app" value="iOS" id="app-iOS-radio" checked>
+                  <label for="app-iOS-radio">Pink для iOS</label>
+                  <input class="visually-hidden form__radio-icon" type="radio" name="app" value="android" id="app-android-radio">
+                  <label for="app-android-radio">Pink на Android</label>
+                  <input class="visually-hidden form__radio-icon" type="radio" name="app" value="windows" id="app-windows-radio">
+                  <label for="app-windows-radio">Windows Phone</label>
+                </div>
               </fieldset>
             </div>
             <fieldset class="form__contacts wrapper">
-              <legend class="form__contacts-title form__title form__title--none">Контактная информация</legend>
+              <legend class="form__contacts-title form__title form__title--none" >Контактная информация</legend>
               <div class="form__contacts-wrapper">
                 <label class="form__contacts-label">
                   <input class="form__contacts-input form__text" type="tel" name="tel" placeholder="Номер, пожалуйста">
@@ -95,19 +98,19 @@
               <fieldset class="form__checkbox wrapper">
                 <legend class="form__checkbox-title form__title">Ваши безбашенные достижения в путешествии</legend>
                 <div class="form__checkbox-choices">
-                  <div>
+                  <div class="form__checkbox-group">
                     <input class="visually-hidden form__checkbox-icon" type="checkbox" name="shark" id="shark-checkbox" checked>
                     <label for="shark-checkbox">Сделал селфи с акулой</label>
                     <input class="visually-hidden form__checkbox-icon" type="checkbox" name="beach" id="beach-checkbox" checked>
                     <label for="beach-checkbox">Обгорел на пляже</label>
                   </div>
-                  <div>
+                  <div class="form__checkbox-group">
                     <input class="visually-hidden form__checkbox-icon" type="checkbox" name="Norris" id="Norris-checkbox">
                     <label for="Norris-checkbox">Видел Чака Норриса</label>
                     <input class="visually-hidden form__checkbox-icon" type="checkbox" name="sovenir" id="souvenir-checkbox">
                     <label for="souvenir-checkbox">Накупил сувениров</label>
                   </div>
-                  <div>
+                  <div class="form__checkbox-group">
                     <input class="visually-hidden form__checkbox-icon" type="checkbox" name="tower" id="tower-checkbox" checked>
                     <label for="tower-checkbox">Удержал башню</label>
                     <input class="visually-hidden form__checkbox-icon" type="checkbox" name="hotel" id="hotel-checkbox">
