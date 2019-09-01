@@ -40,28 +40,26 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .post-list__likes {
+  margin: 0;
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 24px;
   color: @third-color;
   text-transform: uppercase;
-  padding-left: 32px;
-  position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 13px;
-    height: 12px;
-    background-image: url("../../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.post-list__likes-icon {
+  width: 13px;
+  height: 12px;
+  background-image: url("../../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-right: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -92,12 +90,8 @@
 
   .post-list__likes {
     margin-top: auto;
-    padding-left: 0;
-
-    &::before {
-      top: 3px;
-      left: 229px;
-    }
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
