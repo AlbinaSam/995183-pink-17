@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
+    <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию мобильный макет */
+    background-image: url( "preview/pink-index-mobile.jpg" );
+  }
+  /* Планшет */
+  @media (min-width: 660px) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "preview/pink-index-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media (min-width: 1200px) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "preview/pink-index-desktop.jpg" );
+    }
+  }
+
+  BODY {
+    opacity: .5;
+  }
+</style>
+<link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
   </head>
   <body>
     <div style="display: none">
