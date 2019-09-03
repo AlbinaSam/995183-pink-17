@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
   </head>
@@ -15,7 +18,7 @@
     <header class="page-header ">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
-          <a href="index.html" class="page-header__logo-link">
+          <a href="index.html" class="page-header__logo-link">Логотип приложения Pink
             <svg class="page-header__logo-mobile" width="74.426px" height="22.859px"><use xlink:href="#logo-pink-white-mobile"></use></svg>
             <svg class="page-header__logo-tablet" width="146.3px" height="40.375px"><use xlink:href="#logo-pink-white-tablet"></use></svg>
             <svg class="page-header__logo-desktop" width="146.3px" height="40.375px"><use xlink:href="#logo-pink-white-desktop"></use></svg>
@@ -48,7 +51,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__title-wrapper">
-        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-main__title page-main__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <section class="contest">
         <div class="contest__wrapper">
@@ -86,11 +89,13 @@
               <div class="form__contacts-wrapper">
                 <label class="form__contacts-label">
                   <input class="form__contacts-input form__text" type="tel" name="tel" placeholder="Номер, пожалуйста">
-                  <span class="form__phone-icon form__contacts-sign">Номер телефона</span>
+                  <span class="form__contacts-sign">Номер телефона</span>
+                  <span class="form__phone-icon"></span>
                 </label>
                 <label class="form__contacts-label">
                   <input class="form__contacts-input form__text" type="email" name="email" placeholder="Введите почту *" required>
-                  <span class="form__mail-icon form__contacts-sign">Адрес почты</span>
+                  <span class="form__contacts-sign">Адрес почты</span>
+                  <span class="form__mail-icon"></span>
                 </label>
               </div>
             </fieldset>

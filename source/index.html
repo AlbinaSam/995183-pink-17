@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
   </head>
@@ -15,7 +18,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
-          <a class="page-header__logo-link">
+          <a class="page-header__logo-link">Логотип приложения Pink
             <svg class="page-header__logo-mobile" width="74.426px" height="22.859px"><use xlink:href="#logo-pink-white-mobile"></use></svg>
             <svg class="page-header__logo-tablet" width="146.3px" height="40.375px"><use xlink:href="#logo-pink-white-tablet"></use></svg>
             <svg class="page-header__logo-desktop" width="146.3px" height="40.375px"><use xlink:href="#logo-pink-white-desktop"></use></svg>
@@ -54,13 +57,13 @@
           <a class="download-app__button button" href="https://www.apple.com/iphone/">Скачать приложение</a>
           <ul class="download-app__source-list">
             <li class="download-app__source-item">
-              <a class="download-app__source-link download-app__source-link--apple" href="https://www.apple.com/iphone/">Apple</a>
+              <a class="download-app__source-link download-app__source-link--apple" href="https://www.apple.com/iphone/">Переход на Apple Store</a>
             </li>
             <li class="download-app__source-item">
-              <a class="download-app__source-link download-app__source-link--android" href="https://play.google.com/store">Android</a>
+              <a class="download-app__source-link download-app__source-link--android" href="https://play.google.com/store">Переход на Google Store</a>
             </li>
             <li class="download-app__source-item">
-              <a class="download-app__source-link download-app__source-link--windows" href="https://www.microsoft.com/ru-ru/store">Windows</a>
+              <a class="download-app__source-link download-app__source-link--windows" href="https://www.microsoft.com/ru-ru/store">Переход на Microsoft Store</a>
             </li>
           </ul>
           <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -79,8 +82,8 @@
           <ul class="advantages__list picture-list">
             <li class="picture-list__item">
               <picture>
-              <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
-              <img class="picture-list__image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="186" height="302" alt="Фото iphone">
+                <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                <img class="picture-list__image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="186" height="302" alt="Фото iphone">
               </picture>
             </li>
             <li class="picture-list__item">
@@ -108,7 +111,7 @@
             </li>
             <li class="text-list__item">
               <h3 class="text-list__title">Меняет мир вокруг</h3>
-              <p class="text-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
+              <p class="text-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="text-list__item">
               <h3 class="text-list__title">Заводит новых друзей</h3>
@@ -126,7 +129,7 @@
           </div>
           <div class="research__description">
             <h3 class="research__title">Эффект<br> на 24 часа!</h3>
-            <p class="research__text">Британские ученые провели исследования<br> и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+            <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект<br>от использования приложения длится целые сутки!</p>
             <a href="#" class="research__link">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -137,6 +140,11 @@
           <input class="slider-toggle toggle1" type="radio" id="btn-1" name="reviews-toggle" checked>
           <input class="slider-toggle toggle2" type="radio" id="btn-2" name="reviews-toggle">
           <input class="slider-toggle toggle3" type="radio" id="btn-3" name="reviews-toggle">
+          <div class="reviews__slider slider__controls">
+            <label for="btn-1">1</label>
+            <label for="btn-2">2</label>
+            <label for="btn-3">3</label>
+          </div>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <span class="reviews__author-name">Николай Петров</span>
@@ -156,11 +164,6 @@
             <button class="reviews__prev">Предыдущий отзыв</button>
             <button class="reviews__next">Следующий отзыв</button>
           </div>
-          <p class="reviews__slider slider__controls">
-            <label for="btn-1">1</label>
-            <label for="btn-2">2</label>
-            <label for="btn-3">3</label>
-          </p>
         </div>
       </section>
       <section class="tariff">
@@ -169,14 +172,19 @@
           <input class="slider-toggle toggle4" type="radio" id="btn-4" name="tariff-toggle">
           <input class="slider-toggle toggle5" type="radio" id="btn-5" name="tariff-toggle" checked>
           <input class="slider-toggle toggle6" type="radio" id="btn-6" name="tariff-toggle">
+          <div class="tariff__slider slider__controls">
+            <label for="btn-4">4</label>
+            <label for="btn-5">5</label>
+            <label for="btn-6">6</label>
+          </div>
           <div class="tariff__wrapper">
             <table class="tariff__table">
               <tbody>
                 <tr>
                   <td class="tariff__name--empty"></td>
-                  <td class="tariff__name">База<br><span class="tariff__price">1,99 USD</span></td>
-                  <td class="tariff__name tariff__hit">Стандарт<br><span class="tariff__price">3,99 USD</span></td>
-                  <td class="tariff__name">Анлим<br><span class="tariff__price">9,99 USD</span></td>
+                  <td class="tariff__name">База<span class="tariff__price">1,99 USD</span></td>
+                  <td class="tariff__name tariff__hit">Стандарт<span class="tariff__price">3,99 USD</span></td>
+                  <td class="tariff__name">Анлим<span class="tariff__price">9,99 USD</span></td>
                 </tr>
                 <tr>
                   <td class="tariff__option-name">Розовый фильтр</td>
@@ -199,11 +207,6 @@
               </tbody>
             </table>
           </div>
-          <p class="tariff__slider slider__controls">
-            <label for="btn-4">4</label>
-            <label for="btn-5">5</label>
-            <label for="btn-6">6</label>
-          </p>
         </div>
       </section>
       <section class="contacts wrapper">
@@ -256,9 +259,8 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <svg width="26.943px" height="34.09px"><use xlink:href="#logo-htmlacademy"></use>
-            </svg>
-            </a>
+            <svg width="26.943px" height="34.09px"><use xlink:href="#logo-htmlacademy"></use></svg>
+          </a>
         </div>
       </div>
     </footer>

@@ -1,3 +1,8 @@
+.slider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .slider input[type="radio"] {
   display: none;
 }
@@ -16,6 +21,14 @@
   margin: 0 7px;
   cursor: pointer;
   transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
 }
 
 .toggle1:checked ~ .slider__controls label[for="btn-1"],
@@ -28,7 +41,7 @@
   border: 3px solid @primary-color;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: 659px) {
   .toggle4:checked ~ .tariff__wrapper .tariff__table {
     margin-left: 20px;
   }

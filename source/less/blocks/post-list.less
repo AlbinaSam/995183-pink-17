@@ -5,7 +5,12 @@
 }
 
 .post-list__item {
+  background-color: #f2f2f2;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -16,16 +21,12 @@
   display: block;
 }
 
-.post-list__description {
-  background-color: #f2f2f2;
-  padding: 17px 10px 20px 18px;
-}
-
 .post-list__author {
   font-weight: bold;
   margin: 0;
   font-size: 14px;
   line-height: 24px;
+  padding: 17px 10px 0 18px;
 }
 
 .post-list__how-long-ago {
@@ -41,6 +42,7 @@
   line-height: 24px;
   font-weight: normal;
   margin-bottom: 10px;
+  padding: 0 10px 0 18px;
 }
 
 .post-list__likes {
@@ -51,6 +53,7 @@
   line-height: 24px;
   color: @third-color;
   text-transform: uppercase;
+  padding: 0 10px 0 18px;
 }
 
 .post-list__likes-icon {
@@ -60,12 +63,20 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-right: 19px;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
   .post-list__item {
     width: 300px;
     margin-right: 20px;
+    min-height: 433px;
+    padding-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
   }
 
   .post-list__item:nth-child(2n) {
@@ -77,21 +88,20 @@
     height: 300px;
   }
 
-  .post-list__description {
-    display: flex;
-    flex-direction: column;
-    min-height: 109px;
-    padding: 24px 10px 22px 27px;
+  .post-list__author {
+    padding: 24px 10px 0 27px;
   }
 
   .post-list__text {
     margin-bottom: 12px;
+    padding: 0 10px 0 27px;
   }
 
   .post-list__likes {
     margin-top: auto;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding: 0 10px 0 27px;
   }
 }
 
@@ -99,6 +109,11 @@
   .post-list__item {
     margin-bottom: 55px;
     margin-right: 20px;
+    min-height: 533px;
+
+    &:last-child {
+      margin-bottom: 55px;
+    }
   }
 
   .post-list__item:nth-child(2n) {

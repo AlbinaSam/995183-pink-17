@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
   </head>
@@ -15,7 +18,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
-          <a href="index.html" class="page-header__logo-link">
+          <a href="index.html" class="page-header__logo-link">Логотип приложения Pink
             <svg class="page-header__logo-mobile" width="74.426px" height="22.859px"><use xlink:href="#logo-pink-white-mobile"></use></svg>
             <svg class="page-header__logo-tablet" width="146.3px" height="40.375px"><use xlink:href="#logo-pink-white-tablet"></use></svg>
             <svg class="page-header__logo-desktop" width="146.3px" height="40.375px"><use xlink:href="#logo-pink-white-desktop"></use></svg>
@@ -48,7 +51,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__title-wrapper">
-        <h1 class="page-main__title">Фотографии<br>пользователей</h1>
+        <h1 class="page-main__title page-main__title--foto">Фотографии пользователей</h1>
       </div>
       <section class="users-photos">
         <header class="users-photos__header wrapper ">
@@ -68,10 +71,11 @@
           </picture>
           <div class="wrapper">
             <div class="best-photo__description">
-              <b class="best-photo__author">Анна</b>
-              <span class="best-photo__how-long-ago">(5 минут назад)</span>
+              <p class="best-photo__author">Анна
+                <span class="best-photo__how-long-ago">(5 минут назад)</span>
+              </p>
               <p class="best-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <p class="best-photo__likes"><span class="best-photo__likes-icon" aria-label="Лайкнуть фото"></span>Нравится: 215</p>
+              <p class="best-photo__likes"><button class="best-photo__likes-icon" aria-label="Лайкнуть фото"></button>Нравится: 215</p>
             </div>
           </div>
         </div>
@@ -89,13 +93,11 @@
                   <img class="post-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
                 </picture>
               </a>
-              <div class="post-list__description">
                 <p class="post-list__author">Левон
-                <span class="post-list__how-long-ago">(5 часов назад)</span>
+                  <span class="post-list__how-long-ago">(5 часов назад)</span>
                 </p>
                 <p class="post-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="post-list__likes"><span class="post-list__likes-icon" aria-label="Лайкнуть фото"></span>Нравится: 356</p>
-              </div>
+                <p class="post-list__likes"><button class="post-list__likes-icon" aria-label="Лайкнуть фото"></button>Нравится: 356</p>
             </li>
             <li class="post-list__item">
               <a href="#">
@@ -109,13 +111,11 @@
                   <img class="post-list__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
                 </picture>
               </a>
-              <div class="post-list__description">
                 <p class="post-list__author">Антон
                   <span class="post-list__how-long-ago">(12 часов назад)</span>
                 </p>
                 <p class="post-list__text">Соседи будут рады!</p>
-                  <p class="post-list__likes"><span class="post-list__likes-icon" aria-label="Лайкнуть фото"></span>Нравится: 666</p>
-              </div>
+                <p class="post-list__likes"><button class="post-list__likes-icon" aria-label="Лайкнуть фото"></button>Нравится: 666</p>
             </li>
             <li class="post-list__item">
               <a href="#">
@@ -129,13 +129,11 @@
                   <img class="post-list__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
                 </picture>
               </a>
-              <div class="post-list__description">
                 <p class="post-list__author">Борис
-                <span class="post-list__how-long-ago">(20 часов назад)</span>
+                  <span class="post-list__how-long-ago">(20 часов назад)</span>
                 </p>
                 <p class="post-list__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="post-list__likes"><span class="post-list__likes-icon" aria-label="Лайкнуть фото"></span>Нравится: 215</p>
-              </div>
+                <p class="post-list__likes"><button class="post-list__likes-icon" aria-label="Лайкнуть фото"></button>Нравится: 215</p>
             </li>
             <li class="post-list__item">
               <a href="#">
@@ -149,13 +147,11 @@
                   <img class="post-list__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
                 </picture>
               </a>
-              <div class="post-list__description">
                 <p class="post-list__author">Сергей
-                <span class="post-list__how-long-ago">(25 часов назад)</span>
+                  <span class="post-list__how-long-ago">(25 часов назад)</span>
                 </p>
                 <p class="post-list__text">Самая кубанская в мире!</p>
-                <p class="post-list__likes"><span class="post-list__likes-icon" aria-label="Лайкнуть фото"></span>Нравится: 4</p>
-              </div>
+                <p class="post-list__likes"><button class="post-list__likes-icon" aria-label="Лайкнуть фото"></button>Нравится: 4</p>
             </li>
             <li class="post-list__item">
               <a href="#">
@@ -169,13 +165,11 @@
                   <img class="post-list__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
                 </picture>
               </a>
-              <div class="post-list__description">
                 <p class="post-list__author">Максим
-                <span class="post-list__how-long-ago">(40 часов назад)</span>
+                  <span class="post-list__how-long-ago">(40 часов назад)</span>
                 </p>
                 <p class="post-list__text">Где снег-то?</p>
-                <p class="post-list__likes"><span class="post-list__likes-icon" aria-label="Лайкнуть фото"></span>Нравится: 150</p>
-              </div>
+                <p class="post-list__likes"><button class="post-list__likes-icon" aria-label="Лайкнуть фото"></button>Нравится: 150</p>
             </li>
             <li class="post-list__item">
               <a href="#">
@@ -189,13 +183,11 @@
                   <img class="post-list__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
                 </picture>
               </a>
-              <div class="post-list__description">
                 <p class="post-list__author">Надежда
-                <span class="post-list__how-long-ago">(45 часов назад)</span>
+                  <span class="post-list__how-long-ago">(45 часов назад)</span>
                 </p>
                 <p class="post-list__text">Всем GM и взаимные лайки!</p>
-                <p class="post-list__likes"><span class="post-list__likes-icon" aria-label="Лайкнуть фото"></span>Нравится: 2560</p>
-              </div>
+                <p class="post-list__likes"><button class="post-list__likes-icon" aria-label="Лайкнуть фото"></button>Нравится: 2560</p>
             </li>
           </ul>
         </div>
@@ -220,21 +212,21 @@
                 <span class="visually-hidden">Обрезка</span>
                 <svg class="editor__crop-image" width="44px" height="44px"><use xlink:href="#icon-editor-crop"></use></svg>
                 <div class="editor__crop-control">
-                  <span class="editor__control-toggle editor__control-toggle--crop"></span>
+                  <button class="editor__control-toggle editor__control-toggle--crop"></button>
                 </div>
               </li>
               <li class="editor__fill">
                 <span class="visually-hidden">Наполнение</span>
                 <svg class="editor__fill-image" width="48px" height="48px"><use xlink:href="#icon-editor-fill"></use></svg>
                 <div class="editor__fill-control">
-                  <span class="editor__control-toggle editor__control-toggle--fill"></span>
+                  <button class="editor__control-toggle editor__control-toggle--fill"></button>
                 </div>
               </li>
               <li class="editor__contrast">
                 <span class="visually-hidden">Контраст</span>
                 <svg class="editor__contrast-image" width="32px" height="32px"><use xlink:href="#icon-editor-contrast"></use></svg>
                 <div class="editor__contrast-control">
-                  <span class="editor__control-toggle editor__control-toggle--contrast"></span>
+                  <button class="editor__control-toggle editor__control-toggle--contrast"></button>
                 </div>
               </li>
             </ul>
