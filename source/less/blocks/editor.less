@@ -2,19 +2,29 @@
   background-color: #f2f2f2;
 }
 
-.editor__wrapper {
-  padding: 20px 0 43px;
+.editor__title-wrapper {
+  background: @second-color;
+  font-size: 14px;
+  line-height: 30px;
+  color: @primary-color;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 .editor__title {
   font-size: 14px;
   line-height: 30px;
-  color: @primary-color;
   font-weight: normal;
-  text-align: center;
-  padding: 0 80px 40px;
+  margin: 0;
+}
+
+.editor__subtitle {
   margin: 0 auto;
-  background-color: #ffffff;
+  width: 263px;
+}
+
+.editor__wrapper {
+  padding: 20px 0 43px;
 }
 
 .editor__picture {
@@ -154,9 +164,17 @@
 }
 
 @media (min-width: @tablet-width) {
-  .editor__title {
+  .editor__title-wrapper {
     .font-mixin;
     padding-bottom: 69px;
+  }
+
+  .editor__title {
+    .font-mixin;
+  }
+
+  .editor__subtitle {
+    width: auto;
   }
 
   .editor__wrapper {
@@ -312,7 +330,7 @@
     margin-bottom: 30px;
   }
 
-  .editor__title {
+  .editor__title-wrapper {
     padding-bottom: 63px;
   }
 
